@@ -1,7 +1,8 @@
 name: Release to Official PyPI on Release Publish
 
 on:
-  workflow_dispatch:
+  release:
+    types: [created]
 
 jobs:
   deploy:
