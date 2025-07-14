@@ -1,6 +1,6 @@
 [project]
 name = "revoltutils"
-version = "1.0.0"
+version = "1.0.1"
 description = "revoltutils is an Python utility library offering modular tools for networking, file operations, system info, and automation."
 readme = "README.md"
 requires-python = ">=3.13"
