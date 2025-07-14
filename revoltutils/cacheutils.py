@@ -16,10 +16,10 @@ class AsyncDiskCache:
     async def add(self, key: str, value: Any) -> bool:
         return await asyncio.to_thread(self._cache.add, key, value)
 
-    async def delete(self, key: str) -> None:
+    async def delete(self, key: Any) -> None:
         await asyncio.to_thread(self._cache.delete, key)
 
-    async def contains(self, key: str) -> bool:
+    async def contains(self, key: Any) -> bool:
         return await asyncio.to_thread(lambda: key in self._cache)
 
     async def clear(self) -> None:
